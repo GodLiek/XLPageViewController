@@ -10,18 +10,19 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "XLPageViewController"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of XLPageViewController."
+  spec.version      = "0.0.2"
+  spec.summary      = "XLPageViewController"
   spec.description  = <<-DESC
-                   DESC
+  A short description of XLPageViewController.Branch
+                       DESC
 
   spec.homepage     = "https://github.com/GodLiek/XLPageViewController"
-  spec.license      = "MIT"
-  spec.author             = { "ZhangKaiXuan" => "glztmail@163.com" }
-  spec.platform     = :ios
-  spec.platform     = :ios, "8.0"
-  spec.source       = { :git => "https://github.com/GodLiek/XLPageViewController.git", :tag => spec.version }
-  spec.source_files  = "XLPageViewController/*.{h,m}"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author       = { "ZhangKaiXuan" => "glztmail@163.com" }
+  spec.ios.deployment_target = '9.0'
+  spec.source       = { :git => "https://github.com/GodLiek/XLPageViewController.git", :tag => spec.version.to_s }
+  spec.source_files  = 'XLPageViewControllerExample/XLPageViewController/*'
+
   #spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
 
